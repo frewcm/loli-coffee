@@ -7,6 +7,10 @@ export default {
         sedan: ["Sedan", "serif"],
         nunito: ["Nunito", "sans-serif"],
       },
+      colors: {
+        primary: "#231F20",
+        secondary: "#E8E8E1",
+      },
     },
   },
   plugins: [],
