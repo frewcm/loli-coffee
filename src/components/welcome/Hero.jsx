@@ -13,10 +13,7 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen">
       {heroImages.map((image, index) => (
-        <motion.div
-          initial={{ x: 100 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5 }}
+        <div
           className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ${
             index === currentSlide ? "opacity-100" : "opacity-0"
           }`}
@@ -42,7 +39,7 @@ export default function Hero() {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       ))}
     </section>
   );

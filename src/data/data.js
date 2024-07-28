@@ -1,9 +1,10 @@
 const hero1 = "/hero1.jpg";
 const hero2 = "/hero2.jpg";
 const hero3 = "/hero3.jpg";
-const coffee1 = "/coffee1.jpg";
-const coffee2 = "/coffee2.jpg";
-const coffee3 = "/coffee3.jpg";
+const coffee = "/coffee.jpg";
+const bread = "/bread.jpg";
+const bread2 = "/bread2.jpg";
+const location = "/location.jpg";
 
 export const heroImages = [
   {
@@ -30,17 +31,44 @@ export const heroImages = [
 export const coffeeList = [
   {
     id: 1,
-    src: coffee1,
+    src: coffee,
     button: "Button",
   },
   {
     id: 2,
-    src: coffee2,
+    src: bread,
     button: "Button",
   },
   {
     id: 3,
-    src: coffee3,
+    src: bread2,
     button: "Button",
+  },
+];
+
+export const locationList = [
+  {
+    id: 1,
+    img: location,
+    generalLocation: "General Location",
+    specificLocation: "Specific Location",
+    openTime: "The time the shop is open",
+    direction: "/",
+  },
+  {
+    id: 2,
+    img: location,
+    generalLocation: "General Location",
+    specificLocation: "Specific Location",
+    openTime: "The time the shop is open",
+    direction: "/",
+  },
+  {
+    id: 2,
+    img: location,
+    generalLocation: "General Location",
+    specificLocation: "Specific Location",
+    openTime: "The time the shop is open",
+    direction: "/",
   },
 ];

@@ -2,7 +2,7 @@ import LocationOne from "./LocationOne";
 
 export default function Locations() {
   return (
-    <div>
+    <div className="">
       <LocationOne />
     </div>
   );

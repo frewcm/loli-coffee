@@ -17,10 +17,10 @@ export default function WelcomeTwo() {
         <div className="my-8 relative w-full min-h-72 rounded-lg  flex flex-col items-center justify-center">
           <img
             className="absolute rounded-lg w-full h-full object-cover z-[-1]"
-            src="building.jpg"
+            src="coffee-bg.jpg"
             alt=""
           />
-          <div className="absolute w-full h-full bg-primary/50 rounded-lg z-[-1]"></div>
+          <div className="absolute w-full h-full bg-primary/60 rounded-lg z-[-1]"></div>
           <p className="w-10/12 mx-auto text-secondary text-center font-sedan text-md md:text-xl">
             Our coffee and pastry shops, located around Lebu Mebrat Hail, offer
             cozy and welcoming atmospheres. We pride ourselves on providing the
