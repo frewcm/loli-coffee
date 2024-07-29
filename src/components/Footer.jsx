@@ -15,7 +15,7 @@ export default function Footer() {
           <p className="text-sm">Wholesale</p>
         </div>
         <div className="mt-8 w-full h-full flex flex-col items-center justify-center gap-4">
-          <img className="w-20" src="loli-logo.png" alt="" />
+          <img className="w-28" src="logo-white.png" alt="" />
           <p className="text-2xl font-sedan">Connect with us</p>
           <p className="text-sm">loliscoffeshop@gmail.com</p>
         </div>

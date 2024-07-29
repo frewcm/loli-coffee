@@ -14,7 +14,7 @@ export default function ContactOne() {
       <div className="hidden mr-20 w-72 h-80 md:flex flex-col gap-4 items-center justify-center bg-secondary rounded-lg shadow-xl drop-shadow-2xl">
         <div className="flex gap-2">
           <FaPhone className="text-primary" size={25} />
-          <p className="text-primary text-lg font-nunito">+251911879388</p>
+          <p className="text-primary text-lg font-nunito">+251936490191</p>
         </div>
         <div className="flex gap-2">
           <FaGlobe className="text-primary" size={25} />

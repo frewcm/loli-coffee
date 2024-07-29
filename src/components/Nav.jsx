@@ -69,28 +69,44 @@ export default function Nav() {
         <div className="w-10/12 mx-auto h-full flex items-center justify-between gap-10">
           <div>
             <Link to="/">
-              <img className="w-12" src="loli-logo.png" alt="" />
+              {color ||
+              pathname === "/location" ||
+              pathname === "/contact" ||
+              pathname === "/about" ? (
+                <img className="w-24" src="logo-black.png" alt="" />
+              ) : (
+                <img className="w-24" src="logo-white.png" alt="" />
+              )}
             </Link>
           </div>
           <div
             className={`hidden lg:flex gap-4 font-nunito text-lg ${
-              color && "text-primary"
-            } ${
-              pathname === "/location" ||
-              (pathname === "/contact" && "text-primary")
+              color || (pathname === "/contact" ? "text-primary" : "")
             }`}
           >
-            <Link to="/location">Locations</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/contact">Contact Us</Link>
+            {color ||
+            pathname === "/location" ||
+            pathname === "/contact" ||
+            pathname === "/about" ? (
+              <div className="text-primary lg:flex gap-4 font-nunito text-lg">
+                <Link to="/location">Locations</Link>
+                <Link to="/about">About Us</Link>
+                <Link to="/contact">Contact Us</Link>
+              </div>
+            ) : (
+              <div className="text-secondary lg:flex gap-4 font-nunito text-lg">
+                <Link to="/location">Locations</Link>
+                <Link to="/about">About Us</Link>
+                <Link to="/contact">Contact Us</Link>
+              </div>
+            )}
           </div>
           <div
-            className={`hidden lg:flex gap-4 transition delay-300 ease-in-out ${
-              color ? "text-primary" : "text-secondary"
+            className={`hidden lg:flex gap-4 ${
+              color ? "text-secondary" : "text-primary"
             }`}
           >
-            <SiMaterialdesignicons className="text-primary" size={25} />
-            <SiMaterialdesignicons className="text-primary" size={25} />
+            .
           </div>
           <RiMenu2Fill
             className={`block lg:hidden transition delay-300 ease-in-out ${

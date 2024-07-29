@@ -4,7 +4,7 @@ export default function WelcomeThree() {
   return (
     <section className="w-full min-h-80 pb-10">
       <div className="w-10/12 mx-auto flex flex-col items-center justify-center gap-3">
-        <img className="w-24" src="loli-logo.png" alt="" />
+        <img className="w-32" src="logo-black.png" alt="" />
         <p className="font-sedan text-2xl text-primary text-center">
           Step in and experience the art of our coffee and pastries!
         </p>
